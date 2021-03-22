@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="6">
+
+    <ImageView
+        android:layout_weight="1.5"
+        android:id="@+id/imgMusicImage"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:src="@drawable/image"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_weight="2.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtTrackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Name"
+            android:layout_marginTop="10dp"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/txtArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTrackName"
+            android:text="Name of Artist"
+            android:layout_marginTop="10dp"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtGenreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtArtistName"
+            android:text="Genre"
+            android:layout_marginTop="10dp"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtTrackId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track ID"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txtArtistId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTrackId"
+                android:text="Artist ID"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txtTrackTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtArtistId"
+                android:text="Time"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

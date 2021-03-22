@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Itunes</string>
+    <string name="search_title">Search Music Track</string>
+    <string name="search_songs_by_artist_name">Search Songs by Artist Name</string>
+</resources>
